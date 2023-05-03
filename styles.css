@@ -4,13 +4,9 @@ body{
 
 
 
-.first-txt {
-    color:rgb(255, 208, 0);
-    position: absolute;
-    left: 20px;
-    text-shadow: 10px 10px 10px rgb(0, 0, 0,1);
+.hero{
+    margin-bottom: 10px;
 }
-
 
 
 .pup{
