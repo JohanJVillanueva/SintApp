@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/heavitas');
+@import url('https://fonts.cdnfonts.com/css/dm-sans');
+     
+
+
+  .box {
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+  }
+
+
+
+h1{
+    font-family: 'Heavitas', sans-serif;  
+                                       
+}
+
+h3,h4,h5{
+    font-family: 'DM Sans', sans-serif;
+                                                
+}
+
+.picmap{
+    width: 600px;   
+}
+
+#gym{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#oval{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#chapel{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#pool{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#pylon{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#guard{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#mabini{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#pe{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#tennis{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+#nut{
+    box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.254);
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    width: 47%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.description{
+    font-size: 15px;
+}

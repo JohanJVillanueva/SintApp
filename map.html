@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="map.css">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -46,19 +47,143 @@
     </div>
 
     <br>
-    <div class="hero">
-        <div class="scanme">
-          <center>
-          <h4 style="color: white;"> Scan Me!</h4>>
-          <img src="open.png" style="width: 60%;margin-left: -20px;">
-        </center>
+    <div class="hero" style="height: 200px; margin-top: -25px;">
+        <img class="pup" src="PUP.jpg" style="margin-top: -100px;">   
+    </div>
+
+    <div class="map">
+        <div class="box">
+
+            <img src="pupmap.gif" class="picmap" usemap="#pupmap" style="border-radius: 30px;margin: 20px;" >
+            <h1 style="margin-top: -20px;    font-size: 20px;    ">
+                PUP Map!
+            </h1>
+            <h3 style="margin-top: -20px;    font-size: 20px;    ;">
+                Hover around the map to view PUP's Main Attractions!
+            </h3>
+        </div>
+          <map name="pupmap">
+            <area shape="rect" coords="390,45,490,100" href="#" id="myArea1" >
+            <area shape="rect" coords="400,259,500,400" href="#" id="myArea2" >
+            <area shape="circle" coords="410,350,55" href="#" id="myArea2" >
+            <area shape="circle" coords="290,350,55" href="#" id="myArea3" >
+            <area shape="rect" coords="310,45,480,90" href="#" id="myArea4" >
+            <area shape="rect" coords="500,180,550,200" href="#" id="myArea5" >
+            <area shape="rect" coords="500,200,550,220" href="#" id="myArea6" >
+            <area shape="circle" coords="340,190,25" href="#" id="myArea7" >
+            <area shape="rect" coords="280,20,300,140" href="#" id="myArea8" >
+            <area shape="rect" coords="390,100,490,200" href="#" id="myArea9" >
+            <area shape="rect" coords="200,410,340,425" href="#" id="myArea10" >
+
+        </map>      
+
+          <div id="gym">
+                <h1 class="name" style="font-size: 20px;">
+                    PUP Gymnasium and Sport Center 
+                </h1>
+                <h3 class="description" style="font-size: 15px;">
+                    The PUP Gymnasium and Sport Center is a large, multi-purpose facility that is used for a variety of activities, including sports, concerts, and conventions.
+
+                </h3>
+                <img src="photos/gym.jpg" style="width: 80%;border-radius: 20px;"class="image">
+          </div>
+
+          <div id="oval">
+            <h1 class="name">
+               PUP Oval
+            </h1>
+            <h3 class="description">
+                The PUP Oval is a large, open field located in the heart of the PUP campus. It is a popular spot for students to relax, play sports, or just hang out.
+
+            </h3>
+            <img src="photos/oval.jpg" style="width: 80%;border-radius: 20px;"class="image">
         </div>
 
 
-        <img class="pup" src="PUP.jpg">   
-        <div class="pupian">
-          <img src="pupiancut.png" style="width: 800px;">
+        <div id="chapel">
+            <h1 class="name">
+                PUP Interfaith Chapel
+            </h1>
+            <h3 class="description">
+                The PUP Interfaith Chapel is a place of worship for students of all faiths. It is a quiet and peaceful space where students can come to pray, meditate, or simply relax.
+            </h3>
+        <img src="photos/chapel.jpg" style="width: 80%;border-radius: 20px;"class="image">
         </div>
+
+        <div id="pool">
+            <h1 class="name">
+                PUP Swimming Pool
+            </h1>
+            <h3 class="description">
+                The PUP Swimming Pool is a state-of-the-art facility that is open to students, faculty, and staff. It is a great place to cool off on a hot day or to get in a workout.
+            </h3>
+        <img src="photos/pupswim.jpg" style="width: 80%;border-radius: 20px;"class="image">
+        </div>
+
+        <div id="pylon">
+            <h1 class="name">
+                PUP Pylon
+            </h1>
+            <h3 class="description">
+                The PUP Pylon is a towering structure that stands at the entrance to the PUP campus. It is a symbol of the university's pride and tradition.
+            </h3>
+        <img src="photos/pylon.jpg" style="width: 80%;border-radius: 20px;"class="image">
+        </div>
+
+        <div id="guard">
+            <h1 class="name">
+                PUP Guard House 
+            </h1>
+            <h3 class="description">
+                The PUP Guard House is the first building that visitors see when they enter the PUP campus. It is staffed by security guards who are responsible for the safety of the campus community.
+            </h3>
+        <img src="photos/guardhouse.jpg" style="width: 80%;border-radius: 20px;"class="image">
+        </div>
+
+        <div id="mabini">
+            <h1 class="name">
+                PUP Mabini Monument
+            </h1>
+            <h3 class="description">
+                The PUP Mabini Monument is a towering obelisk that stands in the center of the PUP campus. It is dedicated to Apolinario Mabini, a Filipino revolutionary leader and statesman.
+
+            </h3>
+        <img src="photos/obelisk.jpg" style="width: 80%;border-radius: 20px;"class="image">
+        </div>
+
+        <div id="pe">
+            <h1 class="name">
+                PUP PE Building
+            </h1>
+            <h3 class="description">
+                The PUP Physical Education Building is a four-storey building located in the heart of the PUP campus. It houses the College of Human Kinetics, which offers undergraduate and graduate programs in physical education, sports, and recreation. The building also has a gymnasium, a swimming pool, a weight room, and a number of classrooms and laboratories.
+            </h3>
+        <img src="photos/pe.PNG" style="width: 50%;border-radius: 20px;"class="image">
+        </div>
+
+        <div id="tennis">
+            <h1 class="name">
+                PUP Tennis Court
+            </h1>
+            <h3 class="description">
+                The PUP Tennis Court is a well-maintained facility that is open to students, faculty, and staff. It is a great place to play tennis or to simply relax.
+        <img src="photos/teniss.jpg" style="width: 80%;border-radius: 20px;"class="image">
+        </div>
+
+        <div id="nut">
+            <h1 class="name">
+                PUP's nutrition and science building
+            </h1>
+            <h3 class="description">
+                The Nutrition and Science Building (CNFS) is a four-storey building located in the heart of the PUP campus. It houses the College of Nutrition and Food Science, which offers undergraduate and graduate programs in nutrition and food science. The building also has a number of laboratories, classrooms, and offices.
+<br>
+        <img src="photos/nut.jpg" style="width: 60%;border-radius: 20px;"class="image">
+        </div>
+
+
+
+
+     
     </div>
 
 
@@ -66,9 +191,8 @@
 
 
 
-
-
     <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="map.js"></script>
     <script type="text/javascript" src="functions.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
