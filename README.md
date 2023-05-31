@@ -1,1 +1,2 @@
 # SintApp
+# SintaApplication
