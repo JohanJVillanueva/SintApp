@@ -3,7 +3,8 @@ body{
 }
 
 
-
+@import url('https://fonts.cdnfonts.com/css/heavitas');
+@import url('https://fonts.cdnfonts.com/css/dm-sans');
 
 .hero{
     animation: fadeIn 1s;
@@ -67,10 +68,6 @@ body{
     100% { opacity: 1; }
   }
 
-
-
-
-
 .pup{
     animation: fadeIn 1s;
     border-radius: 5px;
@@ -99,6 +96,18 @@ body{
     
 }
 
+.events{
+    animation: fadeIn 1s;
+    float:left;
+    width: 69%;
+    background-color: rgba(255, 255, 255, .9);   
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
 
 
 .twitter{
@@ -143,9 +152,14 @@ h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-h5{
+h4{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+h5{
+    font-family: 'DM Sans', sans-serif;
+}
 
-
+h3{
+    font-family: 'Heavitas', sans-serif;         
+}
