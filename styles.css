@@ -96,6 +96,34 @@ body{
     
 }
 
+.explore1{
+  margin: 10px;
+  animation: fadeIn 1s;
+  float:left;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .9);   
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.explore2{
+  margin: 10px;
+  animation: fadeIn 1s;
+  float:left;
+  width: 40%;
+  background-color: rgba(255, 255, 255, .9);   
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
 .events{
     animation: fadeIn 1s;
     float:left;
@@ -170,5 +198,8 @@ display: none;
   }
   .events,.explore{
     width: 100%;
+  }
+  .events,.explore,.explore1,.explore2{
+    width: 95%;
   }
 }
