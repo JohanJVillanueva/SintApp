@@ -17,10 +17,19 @@
   </head>
 
   <style>
-    .icons{
-        position: absolute;
-        bottom: 0;
+    h5 {
+      text-shadow: 10px 5px 10px #747467;
     }
+    
+    .icons{
+      position: fixed;
+    bottom: 0px;
+    }
+
+    .icon{
+    width: 150px;
+  }
+
     .background-image {
       position: fixed;
       top: 0;
@@ -32,6 +41,25 @@
       background-position: center;
       z-index: -1;
     }
+    @media only screen and (max-width: 1280px) {
+
+  .calendar,.explore,.weather,.welcome{
+    width: 98%;
+    margin: 10px;
+
+
+  }
+    .icons{
+    position: fixed;
+    bottom: 0px;
+    
+  }
+
+  .icon{
+    width: 100px;
+  }
+
+}
   </style>
   <div class="background-image"></div>
 
@@ -49,84 +77,91 @@
             </div>
           </nav>
     
-
-            <div class="explore" style="margin: 20px;float: left;width: 44%;background-color: rgba(240, 248, 255, 0);">
+            
+            <div class="welcome">
             <h5 style="font-size: 70px; color: maroon;"> Good day! PUPian! </h5>
             <h5 style="color: maroon;"> It's <span id="date"></span> | <span id="time"></span>! </h5>
             </div>
-            <div class="explore" style="margin: 20px;float: left;width: 50%;margin-top: -5px;">
+            <div class="weather">
               
                 <a class="weatherwidget-io" href="https://forecast7.com/en/14d60121d02/santa-mesa/" data-label_1="STA. MESA" data-label_2="WEATHER" data-theme="original" >STA. MESA WEATHER</a>
                 <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
                 </script>
             </div>
-
+          
 
 
             <div class="icons">
-                <a href="index.html"><img src="homeicon.png" width="150px"></a>
-                <a href="selector.html"><img src="vricon.png" width="150px"></a>
+                <a href="index.html"><img src="homeicon.png" class="icon"></a>
+                <a href="selector.html"><img src="vricon.png" class="icon"></a>
             </div>
 
-            <div class="calendar" style="margin: 20px;float: left;width: 50%;background-color: rgb(255, 255, 255);border-radius: 10px;padding: 10px;margin-top: -10px;">
-                
-                <h4> June </h4>
-            </center>
-                    <table>
-                        <tr>
-                          <th>Sun</th>
-                          <th>Mon</th>
-                          <th>Tue</th>
-                          <th>Wed</th>
-                          <th>Thu</th>
-                          <th>Fri</th>
-                          <th>Sat</th>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>1</td>
-                          <td>2</td>
-                          <td>3</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>7</td>
-                          <td>8</td>
-                          <td>9</td>
-                          <td>10</td>
-                        </tr>
-                        <tr>
-                          <td>11</td>
-                          <td class="event">12<br>Philippine Independence Day</td>
-                          <td>13</td>
-                          <td>14</td>
-                          <td class="event">15<br>College Freshman, Main Campus (Sta. Mesa, Manila)</td>
-                          <td class="event">16</td>
-                          <td class="event">17<br></td>
-                        </tr>
-                        <tr>
-                          <td class="event">18</td>
-                          <td class="event">19<br></td>
-                          <td>20</td>
-                          <td>21</td>
-                          <td>22</td>
-                          <td>23</td>
-                          <td class="event">24<br>Manila Day</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
-                            <td>29</td>
-                            <td>30</td>
-                          </tr>         
+            <div class="calendar">
+              <h4> July </h4>
+</center>
+        <table>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="event">3<br>	Final and Departmental Examinations of Graduating Students</td>
+              <td>4</td>
+              <td class="event">5<br>Online encoding of Final Grades of Graduating Students for the Second Semester, A.Y. 2022-2023</td>
+              <td >6</td>
+              <td >7</td>
+              <td >8</td>
+            </tr>
+            <tr>
+              <td >9</td>
+              <td >10</td>
+              <td class="event">11<br>Last day for Graduating Students to clear their Academic and Non-Academic Deficiencies</td>
+              <td>12</td>
+              <td class="event">13<br> Finalization of grades of Graduating Students for the Second Semester, A.Y. 2022-2023</td>
+              <td >14</td>
+              <td >15</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>18</td>
+              <td class="event">19<br>Online encoding of Final Grades of Non-Graduating Students for the Second Semester, A.Y. 2022-2023</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+            </tr>
+            <tr>
+
+                <td class="event">24<br>Final Examinations of Non-Graduating Students</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td class="event">30<br>Second Semester ends</td>
+              </tr>  
+              <tr>
+
+                <td class="event">31<br>Long Vacation begins</td>
+                <td></td>
+                <td></td>
+              </tr>           
             </div>
           </div>
       

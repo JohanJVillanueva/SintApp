@@ -83,6 +83,52 @@ body{
     padding-right: 10px;
 }
 
+.weather{
+  margin: 20px;
+  animation: fadeIn 1s;
+  float:left;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .9);   
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.calendar{
+  margin: 20px;
+  animation: fadeIn 1s;
+  float:left;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .9);   
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  
+}
+
+.welcome{
+  margin: 20px;
+  animation: fadeIn 1s;
+  float:left;
+  width: 44%;
+  background-color: rgba(255, 255, 255, 0);   
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  
+}
+
+
+
 .explore{
     animation: fadeIn 1s;
     float:left;
