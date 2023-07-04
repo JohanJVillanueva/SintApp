@@ -127,6 +127,35 @@ body{
   
 }
 
+.newsleft{
+  animation: fadeIn 1s;
+  margin: 10px;
+  float:left;
+  width: 45%;
+  background-color: rgba(255, 255, 255, .9);   
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.newsright{
+  animation: fadeIn 1s;
+  margin: 10px;
+  float:left;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .9);   
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+
 
 
 .explore{
