@@ -5,63 +5,10 @@
 <head>
 <title>COVID-19 Health Check</title>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
 
-h1 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-input[type="submit"] {
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-/* This CSS code will center the form */
-.survey {
-  
-  width: 30%;
-  margin: 10px
-}
-</style>
-
-
-</head>
-<body>
+<body><center>
 <div class="survey">
-<form onsubmit="checkVaccinationStatus">
+<form onsubmit="checkVaccinationStatus()">
 <h1>COVID-19 Health Check</h1>
 <p>Please answer the following questions to help us assess your health.</p>
 <p>
@@ -148,30 +95,26 @@ input[type="submit"] {
   <p>Declined Pi</p>
 </div>
 
+<div id="not_vaccinated" style="display: none;">
+  <p>Please provide more information about your vaccination status.</p>
+  <input type="text" name="not_vaccinated_details" />
+</div>
+</center>
 </form>
+
+<script>
+  function checkVaccinationStatus() {
+    var vaccinationStatus = document.getElementById("vaccination_status").value;
+    if (vaccinationStatus == "no") {
+      document.getElementById("not_vaccinated").style.display = "block";
+    } else {
+      document.getElementById("not_vaccinated").style.display = "none";
+    }
+  }
+  </script>
 </html>
 
 
 
-<script>
-      document.getElementById("hdfapprove").style.display = "none";
-    document.getElementById("hdfdeclined").style.display = "none";
 
-  function checkVaccinationStatus() {
-
-    var selectElement = document.getElementById("vaccination_status");
-    var optionElement = selectElement.options[0];
-    console.log(optionElement)
-
-  if (optionElement.selected) {
-    console.log("hello world")
-    document.getElementById("hdfdeclined").style.display = "block";
-
-      // The "No" option is selected.
-    } else {
-      // The "No" option is not selected.
-    }
-      }
-        
-  </script>
   
