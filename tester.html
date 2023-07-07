@@ -1,34 +1,177 @@
-<table>
-  <tr>
-    <th colspan="7" style="background-color: maroon; color: white;">July</th>
-  </tr>
-  <tr>
-    <td>Sun</td>
-    <td>Mon</td>
-    <td>Tue</td>
-    <td>Wed</td>
-    <td>Thu</td>
-    <td>Fri</td>
-    <td>Sat</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-  </tr>
-  <tr style="background-color: yellow;">
-    <td>2</td>
-    <td>3<br>Final and Departmental Examinations of Graduating Students</td>
-    <td>4</td>
-    <td>5<br>Online encoding of Final Grades of Graduating Students for the Second Semester, A.Y. 2022-2023</td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-  </tr>
-  <tr style="background-color: yellow;">
-    <td>9</td>
-    <td>10</br>Last day for Graduating Students to clear their Academic and Non-Academic Deficiencies</td>
+<html>
+<head>
+<title>COVID-19 Health Check</title>
+<html>
+<head>
+<title>COVID-19 Health Check</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* This CSS code will center the form */
+.survey {
+  
+  width: 30%;
+  margin: 10px
+}
+</style>
+
+
+</head>
+<body>
+<div class="survey">
+<form onsubmit="checkVaccinationStatus">
+<h1>COVID-19 Health Check</h1>
+<p>Please answer the following questions to help us assess your health.</p>
+<p>
+<label for="vaccination_status">Are you vaccinated?</label>
+  <select name="vaccination_status" id="vaccination_status">
+  <option value="no" id="notvax">No</option>
+  <option value="1st_dose">1st Dose</option>
+  <option value="2nd_dose">2nd Dose (Fully Vaccinated)</option>
+  <option value="1st_booster">1st Booster</option>
+  <option value="2nd_booster">2nd Booster</option>
+</select>
+</p>
+<p>
+<label for="symptoms">Do you have any of the following symptoms?</label>
+<input type="checkbox" name="symptoms[]" value="none"> None of the Above
+  <input type="checkbox" name="symptoms[]" value="fever"> Fever
+  <input type="checkbox" name="symptoms[]" value="cough"> Cough
+  <input type="checkbox" name="symptoms[]" value="colds"> Colds
+  <input type="checkbox" name="symptoms[]" value="muscle_or_body_pain"> Muscle or Body Pain
+  <input type="checkbox" name="symptoms[]" value="headache"> Headache
+  <input type="checkbox" name="symptoms[]" value="sore_throat"> Sore Throat
+  <input type="checkbox" name="symptoms[]" value="diarrhea"> Diarrhea
+  <input type="checkbox" name="symptoms[]" value="shortness_of_breath"> Shortness of Breath
+  <input type="checkbox" name="symptoms[]" value="difficulty_of_breathing"> Difficulty of Breathing
+  <input type="checkbox" name="symptoms[]" value="loss_of_taste"> Loss of Taste
+  <input type="checkbox" name="symptoms[]" value="loss_of_smell"> Loss of Smell
+</p>
+<p>
+<label for="exposure">Have you had exposure to a probable or confirmed case in the last 14 days?</label>
+<select name="exposure">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+  <option value="uncertain">Uncertain</option>
+</select>
+</p>
+<p>
+<label for="contact">Have you had in contact with somebody with body pains, headaches, soar throat, fever, diarrhea, cough, colds, shortness of breath, loss of taste, or loss of smell in the past 7 days?</label>
+<select name="contact">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+</p>
+<p>
+<label for="tested">Have you been tested for COVID-19 in the last 14 days?</label>
+<select name="tested">
+<option value="no">No</option>
+<option value="yes_positive">Yes - Positive</option>
+<option value="yes_negative">Yes - Negative</option>
+<option value="yes_pending">Yes-Pending</option>
+</select>
+<p>Please fill out this form to provide us with your contact information and the contact information of a person who can be reached on your behalf. This information will be used to contact you about your participation in our research study.</p>
+<p>
+<label for="email">Email Address:</label>
+<input type="email" name="email" id="email" required>
+</p>
+<p>
+<label for="contact_number">Contact Number:</label>
+<input type="tel" name="contact_number" id="contact_number" required>
+</p>
+<h2>Contact Person</h2>
+<p>
+<label for="contact_person_name">Name:</label>
+<input type="text" name="contact_person_name" id="contact_person_name" required>
+</p>
+<p>
+<label for="contact_person_contact_number">Contact Number:</label>
+<input type="tel" name="contact_person_contact_number" id="contact_person_contact_number" required>
+</p>
+<p>
+<label for="contact_person_email_address">Email Address:</label>
+<input type="email" name="contact_person_email_address" id="contact_person_email_address" required>
+</p>
+<p>
+<label for="relationship">Relationship to Respondent:</label>
+<input type="text" name="relationship" id="relationship" required>
+</p>
+<input type="submit" value="Submit">
+
+<div class="hdfapprove" id="hdfapprove">
+  <p>Hello Pi</p>
+</div>
+
+<div class="hdfdeclined" id="hdfdeclined">
+  <p>Declined Pi</p>
+</div>
+
+</form>
+</html>
+
+
+
+<script>
+      document.getElementById("hdfapprove").style.display = "none";
+    document.getElementById("hdfdeclined").style.display = "none";
+
+  function checkVaccinationStatus() {
+
+    var selectElement = document.getElementById("vaccination_status");
+    var optionElement = selectElement.options[0];
+    console.log(optionElement)
+
+  if (optionElement.selected) {
+    console.log("hello world")
+    document.getElementById("hdfdeclined").style.display = "block";
+
+      // The "No" option is selected.
+    } else {
+      // The "No" option is not selected.
+    }
+      }
+        
+  </script>
+  

@@ -268,7 +268,7 @@ h3{
 }
 
 @media only screen and (max-width: 1280px) {
-  .scanme,.twitter,.hymn{
+  .scanme,.twitter,.hymn, .explore2{
 display: none;
   }
   .events,.explore{
